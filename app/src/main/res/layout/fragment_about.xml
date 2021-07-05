@@ -1,0 +1,477 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.dell.Fragments.About">
+    <ScrollView
+        android:id="@+id/nested_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center_vertical"
+            android:background="#88100000"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/spark"/>
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Sparks Foundation"
+                android:layout_toRightOf="@id/logo"
+                android:textStyle="bold"
+                android:textColor="#FFAB00"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                />
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="...inspiring,innovating,integrating"
+                android:layout_toRightOf="@id/logo"
+                android:layout_below="@id/title1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                />
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_below="@id/logo"
+                android:layout_marginTop="7dp"/>
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/view"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="330dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="7dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="#F8A3A3">
+                  <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                      android:padding="5dp">
+                        <TextView
+                            android:id="@+id/tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Events"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textColor="#BD0357" />
+
+                        <TextView
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="We Organize Events, Allowing Students To Learn From The Masters In Their Fields. Get Inspired. Through Stories And Workshops, We Show Them Feasibility Of Big Dreams."
+                            android:textSize="15sp" />
+            </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="330dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="7dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="#EDCD8A">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:gravity="center"
+                            android:text="Internships"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textColor="#FF6D00" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv1"
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="We Conduct Internship Program To Help Students Be Ready For What Is Coming To Them In Their Career Ahead. To Know More About The GRIP Program, Scroll Down.
+"
+                            android:textSize="15sp" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                            <com.google.android.material.card.MaterialCardView
+                        android:layout_width="330dp"
+                        android:layout_height="150dp"
+                                android:layout_margin="10dp"
+                                app:cardBackgroundColor="#CDEC75"
+                                app:cardElevation="7dp"
+                                app:cardCornerRadius="7dp">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp">
+
+                                <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:gravity="center"
+                            android:text="Mentorship"
+                                    android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textColor="#00C853" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv2"
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="We Help Students And Enable Them To Move Forward, Get Unstuck From Any Unfavorable Situation. We Keep An Alternative Channel Open Always To Help Them, When School And People Around Are Not Enough.
+"
+                            android:textSize="15sp" />
+                                </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                            <com.google.android.material.card.MaterialCardView
+                        android:layout_width="330dp"
+                        android:layout_height="150dp"
+                                android:layout_margin="10dp"
+                                app:cardBackgroundColor="#92EAF8"
+                                app:cardElevation="7dp"
+                                app:cardCornerRadius="7dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp">
+                            <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:gravity="center"
+                            android:text="Support"
+                                android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textColor="#0B30FF" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv3"
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="We Connect Them To Available Resources. We Support Students When There Is None Available."
+                            android:textSize="15sp" />
+                            </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                            <com.google.android.material.card.MaterialCardView
+                        android:layout_width="330dp"
+                        android:layout_height="150dp"
+                                android:layout_margin="10dp"
+                                app:cardBackgroundColor="#F8F82D"
+                                app:cardElevation="7dp"
+                                app:cardCornerRadius="7dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp">
+                            <TextView
+                            android:id="@+id/tv4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:gravity="center"
+                            android:text="Scholarship"
+                                android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textColor="#FF3D00" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv4"
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="We Provide Financial Assistance To Meritorious And Deserving Students. We Provide Prizes, Motivating Students To Bring Out Their Best.
+"
+                            android:textSize="15sp" />
+                            </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>        <com.google.android.material.card.MaterialCardView
+                        android:layout_width="330dp"
+                        android:layout_height="150dp"
+                                android:layout_margin="10dp"
+                                app:cardBackgroundColor="#FA7D5E"
+                                app:cardElevation="7dp"
+                                app:cardCornerRadius="7dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp">
+                            <TextView
+                            android:id="@+id/tv5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:gravity="center"
+                            android:text="Community"
+                                android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textColor="#D33807" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv5"
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="We Have Built A Community Of Sharing Knowledge, Helping Each Other. We Encourage Asking For Help, And Let Inner Desire Drive Students To Success.
+"
+                            android:textSize="15sp" />
+                            </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mission and Vision Statement"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/teal_200"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="The sparks foundation is working to bring parity in education,making sure children have equal opportunity at success, irrespective of the financial background. "
+            android:layout_below="@id/view"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Vision Statement"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#FFAB00"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="A world of enabled and connected little minds, building future."
+            android:layout_below="@id/view"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Mission Statement"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#FFAB00"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Statement"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="To inspire students, help them innovate and let them integrate to build the next generation humankind."
+            android:layout_below="@id/view"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+  <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inspire"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="To inspire, motivate and encourage students to learn, create and help build a better society."
+            android:layout_below="@id/view"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+  <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Innovate"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="To teach new ways of thinking, to innovate and solve the problems on their own.
+"
+            android:layout_below="@id/view"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+  <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Integrate"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="To let the students integrate, and help each other, learn from each other and do well together."
+            android:layout_below="@id/view"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="7dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="For More Information visit Our Website:"
+            android:layout_below="@id/view"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:padding="5dp"
+            android:background="#F4D777"
+            android:text="https://www.thesparksfoundationsingapore.org/"
+            android:textCursorDrawable="@color/white"
+            android:layout_below="@id/view"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
